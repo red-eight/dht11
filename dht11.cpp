@@ -74,8 +74,6 @@ int dht11::read(int pin)
 		else cnt--;
 	}
 
-	// WRITE TO RIGHT VARS
-        // as bits[1] and bits[3] are allways zero they are omitted in formulas.
 	humidity_01    = bits[0];
 	humidity_02	   = bits[1]; 
 	temperature_01 = bits[2];
