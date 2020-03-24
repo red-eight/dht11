@@ -31,11 +31,13 @@
 class dht11
 {
 public:
+	int humidity_01;
+	int humidity_02;
+	int temperature_01;
+	int temperature_02;
+	int checksum;
+
     int read(int pin);
-	int humidity;
-	int temperature;
+    bool checksum_is_valid() const;
 };
 #endif
-//
-// END OF FILE
-//
